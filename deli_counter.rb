@@ -16,7 +16,7 @@ def take_a_number(array, name)
   puts "Welcome, #{name}. You are number #{array.length} in line."
 end
 
-line_length = 0
+$line_length = 0
 
 def take_a_number2(array)
   line_length += 1
