@@ -16,6 +16,17 @@ def take_a_number(array, name)
   puts "Welcome, #{name}. You are number #{array.length} in line."
 end
 
+line_length = 0
+
+def take_a_number2(array)
+  if line_length == 0
+    puts "Welcome #{array[0]}"
+    line_length += 1
+  else 
+    puts "Welcome, you are number #{array[line_length]}."
+    line_length += 1
+end
+
 def now_serving(array)
   if array.length == 0
     puts "There is nobody waiting to be served!"
