@@ -1,10 +1,10 @@
 def line(array)
-  if array.length >= 1    #check to see if line is not empty
-    dummy_array = []      #initiate an empty array to receive name string
-    line_count = 1        #initiate a line count (no should be "0. Name")
-    array.each do |name|  #iterate over the given array
-      dummy_array.push("#{line_count}. #{name}") #push place in line and name to dummy array
-      line_count += 1     #increase the counter for each index
+  if array.length >= 1    
+    dummy_array = []
+    line_count = 1  
+    array.each do |name| 
+      dummy_array.push("#{line_count}. #{name}") 
+      line_count += 1   
     end
     puts "The line is currently: #{dummy_array.join(" ")}"
   else puts "The line is currently empty."
