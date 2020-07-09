@@ -19,12 +19,9 @@ end
 line_length = 0
 
 def take_a_number2(array)
-  if line_length == 0
-    puts "Welcome #{array[0]}"
-    line_length += 1
-  else 
-    puts "Welcome, you are number #{array[line_length]}."
-    line_length += 1
+  line_length += 1
+  array.push(line_length)
+    puts "Welcome, you are number #{line_length}."
 end
 
 def now_serving(array)
